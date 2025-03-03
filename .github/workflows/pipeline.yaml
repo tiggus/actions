@@ -7,7 +7,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - id: foo
-        uses: tiggus/actions-library/mona@f3eeabc213403d131ae8dbd5cf2ebe5a3b17c87d
+        uses: tiggus/actions-library/mona?ref=1
         with:
           who-to-greet: 'prakash'
       - run: echo random-number "$RANDOM_NUMBER"
