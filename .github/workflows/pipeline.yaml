@@ -7,7 +7,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - id: step-id
-        uses: tiggus/actions-library/action
+        uses: tiggus/actions-library/action@main
         with:
           string: 'actions-test-string'
       - run: echo random-number "$RANDOM_NUMBER"
