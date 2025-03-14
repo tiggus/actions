@@ -1,9 +1,9 @@
 on: [push]
 
 jobs:
-  actions_test:
+  actions-test:
     runs-on: ubuntu-latest
-    name: actions_test
+    name: actions-test
     steps:
       - uses: actions/checkout@v4
       - id: step-id
