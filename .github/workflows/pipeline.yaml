@@ -15,9 +15,7 @@ jobs:
         env:
           RANDOM_NUMBER: ${{ steps.step-id.outputs.random-number }}
 
-  call-workflow-passing-data:
+  build-test-deploy:
     uses: tiggus/workflows/.github/workflows/workflow.yaml@main
     with:
-      config-path: .github/labeler.yml
-    secrets:
-      token: ${{ secrets.TOKEN }}
+      node-version: '18.x'
