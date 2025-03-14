@@ -1,8 +1,0 @@
-name: terraform
-on: 
-  push:
-  workflow_dispatch:
-
-jobs:
-  terraform:
-    uses: tiggus/workflows/.github/workflows/terraform.yaml@main
