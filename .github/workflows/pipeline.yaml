@@ -1,16 +1,16 @@
 on: [push]
 
 jobs:
-  hello_world_job:
+  actions_test:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: actions_test
     steps:
       - uses: actions/checkout@v4
-      - id: foo
-        uses: tiggus/actions-library/mona@v1.2
+      - id: step-id
+        uses: tiggus/actions-library/action
         with:
-          who-to-greet: 'prakash'
+          string: 'actions-test-string'
       - run: echo random-number "$RANDOM_NUMBER"
         shell: bash
         env:
-          RANDOM_NUMBER: ${{ steps.foo.outputs.random-number }}
+          RANDOM_NUMBER: ${{ steps.step-id.outputs.random-number }}
