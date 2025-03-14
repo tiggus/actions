@@ -22,7 +22,7 @@ jobs:
     uses: tiggus/workflows/.github/workflows/node.yaml@main
     with:
       node-version: '18.x'
-      envname: 'dev'
+      envname: 'prd'
   
   upload-artifact:
     uses: tiggus/workflows/.github/workflows/artifact.yaml@main
