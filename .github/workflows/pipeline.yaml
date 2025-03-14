@@ -1,4 +1,7 @@
-on: [push]
+name: pipeline
+on: 
+  push:
+  workflow_dispatch:
 
 jobs:
   actions-test:
