@@ -22,3 +22,9 @@ jobs:
     uses: tiggus/workflows/.github/workflows/workflow.yaml@main
     with:
       node-version: '18.x'
+  
+  upload-artifact:
+    uses: tiggus/workflows/.github/workflows/artifact.yaml@main
+    with:
+      artifact-name: 'artifact'
+      artifact-path: 'output'
